@@ -116,7 +116,7 @@ client.on('message', async msg => {
 					let index = 0;
 					const embed1 = new Discord.RichEmbed()
 			        .setDescription(`** Choose The Number of Music You Want** :
-${videos.map(video2 => `[**${++index} **] \`${video2.title}\``).join('\n')}`)
+${videos.map(video2 => `[**${++index} **] ${video2.title}`).join('\n')}`)
 					.setFooter("Music")
 					msg.channel.sendEmbed(embed1).then(message =>{message.delete(20000)})
 					

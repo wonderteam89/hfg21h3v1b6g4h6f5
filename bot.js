@@ -28,7 +28,7 @@ message.channel.send({embed:embed});
 });
 
 
-const devs = ["330736085191884801","451579764055080960"];
+const devs = ["290908670529896448","408136927259131905"];
 
 client.on('message', message => {
 if(message.content === adminprefix + "restart") {
@@ -43,7 +43,7 @@ if(message.content === adminprefix + "restart") {
   });
 
 
-const developers = ["330736085191884801","451579764055080960","290908670529896448"];
+const developers = ["408136927259131905","290908670529896448"];
 const admin = "#";
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
@@ -88,7 +88,7 @@ client.on('message', async msg => {
 		if (!voiceChannel) return msg.channel.send('You Must Be In A VoiceChannel.');
 		const permissions = voiceChannel.permissionsFor(msg.client.user);
 		if (!permissions.has('CONNECT')) {
-			return msg.channel.send('لI Dont Have Perms To Connect.');
+			return msg.channel.send('I Dont Have Perms To Connect.');
 		}
 		if (!permissions.has('SPEAK')) {
 			return msg.channel.send('I Dont Have Perms To Speak.');

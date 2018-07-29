@@ -28,7 +28,7 @@ message.channel.send({embed:embed});
 });
 
 
-const devs = ["290908670529896448","408136927259131905"];
+const devs = ["408136927259131905","290908670529896448"];
 
 client.on('message', message => {
 if(message.content === adminprefix + "restart") {

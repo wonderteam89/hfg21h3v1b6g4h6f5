@@ -248,4 +248,11 @@ function play(guild, song) {
 	serverQueue.textChannel.send(` Now Playing : **${song.title}**`);
 }
 
+client.on('message', message => {
+if(message.content === prefix + 'join'){
+   if (!message.member.voiceChannel) return;
+        message.member.voiceChannel.join().then(message.react('✅'));
+}
+});
+
 client.login(process.env.BOT_TOKEN);
